@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: ;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-image: linear-gradient(110deg, #f6d365, #fda085);
+  height: 100vh;
+}
+
+header {
+  font-size: 1.2rem;
+}
+header,
+form {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.3em;
+  font-size: 0.9rem;
+  border: none;
+  background: white;
+}
+
+form input {
+  width: 16rem;
+}
+
+form button {
+  color: #fda085;
+  background: white;
+  cursor: pointer;
+  transition: background-color, color 0.3s ease;
+  -webkit-transition: background-color, color 0.3s ease;
+  -moz-transition: background-color, color 0.3s ease;
+  -ms-transition: background-color, color 0.3s ease;
+  -o-transition: background-color, color 0.3s ease;
+}
+.fa-plus-square {
+  font-size: 0.9em;
+}
+
+form button:hover {
+  background: #fda085;
+  color: white;
+}
+form input:focus {
+  outline: none;
+}
+
+i {
+  font-size: 0.7em;
+  padding: 0.1em;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.todo-list {
+  min-width: 40%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
+  padding-left: 0.4rem;
+}
+.complete-btn,
+.trash-btn {
+  background-color: #ff6f47;
+  color: white;
+  border: none;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: background-color, color 0.5s ease;
+  -webkit-transition: background-color, color 0.5s ease;
+  -moz-transition: background-color, color 0.5s ease;
+  -ms-transition: background-color, color 0.5s ease;
+  -o-transition: background-color, color 0.5s ease;
+}
+
+.complete-btn:hover,
+.trash-btn:hover {
+  background-color: white;
+  color: #ff6f47;
+}
+
+.complete-btn {
+  background-color: rgb(54, 165, 54);
+}
+.trash-btn {
+  background-color: crimson;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.1em;
+  text-decoration-color: orangered;
+  opacity: 0.5;
+  color: white;
+  font-style: italic;
+  background-color: rgb(54, 165, 54);
+  -moz-text-decoration-color: orangered;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+  -moz-transform: translateY(8rem) rotateZ(20deg);
+  -ms-transform: translateY(8rem) rotateZ(20deg);
+  -o-transform: translateY(8rem) rotateZ(20deg);
+
+  opacity: 0;
+}
+select {
+  /* all: unset; */
+  /* background-color: slategray; */
+  outline: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  /* overflow: hidden; */
+  
+}
+select {
+  color: #ff6f47;
+  width: 7rem;
+  font-size: 0.8rem;
+  padding : 0.3rem;
+}
+
+.select::after {
+  content: "\25BC";
+  background-color: #ff6f47;
+  font-size: 0.6rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0.2rem;
+  /* border-bottom-right-radius: 5px; */
+  /* cursor: pointer; */
+  pointer-events:none;
+  
+}
+

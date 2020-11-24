@@ -1,0 +1,12 @@
+
+  "editor.cursorBliening": "smooth",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "editor.formatOnPaste": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "materialtheme.accent": "indigo",
+  "php.executablepath": "e:/wamp64/bin/php/php7.3.21/php.exe",
+  "php.validate.executablepath": "e:/wamp64/bin/php/php7.3.21/php.exe",
